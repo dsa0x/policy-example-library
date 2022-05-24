@@ -15,17 +15,17 @@ module "aws-functions" {
 }
 
 policy "enforce-mandatory-tags" {
-  source = "./enforce-mandatory-tags.sentinel"
+  source = "./policies/enforce-mandatory-tags.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "protect-against-rds-instance-deletion" {
-  source = "./protect-against-rds-instance-deletion.sentinel"
+  source = "./policies/protect-against-rds-instance-deletion.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "require-dns-support-for-vpcs" {
-  source = "./require-dns-support-for-vpcs.sentinel"
+  source = "./policies/require-dns-support-for-vpcs.sentinel"
   enforcement_level = "advisory"
 }
 
